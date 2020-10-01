@@ -3,7 +3,6 @@
 import requests
 import time
 import json
-import time
 
 # 修改这一个cookies
 KSXTSESSID = 'ST-xxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-xxxx-cas'
