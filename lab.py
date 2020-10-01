@@ -22,9 +22,8 @@ header = {
 }
 post_url = 'http://222.200.97.188/gdut_ksxt/Center/Exam/endExam.html'
 exam_url = 'http://222.200.97.188/gdut_ksxt/Center/Exam/beginExam.html?examination_no='+str(examination_no)
+answer_url = "http://222.200.97.188/gdut_ksxt/Center/Question/getQuestionDetail.html?question_no="
 
-# http://222.200.97.188/gdut_ksxt/Center/Question/getQuestionDetail.html?question_no=205335
-# answer_url = "http://222.200.97.188/gdut_ksxt/Center/Question/getQuestionDetail.html?question_no="
 option_d = {
     'A': 0,
     'B': 1,
@@ -33,8 +32,8 @@ option_d = {
 }
 
 def getAnswer(sess, question_no):
-    answer_url = "http://222.200.97.188/gdut_ksxt/Center/Question/getQuestionDetail.html?question_no=" + str(question_no)
-    res = sess.get(answer_url) 
+    url = answer_url + str(question_no)
+    res = sess.get(url) 
 #     print(res.content.decode())
     res = json.loads(res.content.decode())
 #     print(res)
