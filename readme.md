@@ -5,6 +5,9 @@
 适合考试：2020年秋季自动化学院实验室安全准入考试（考试代号484）
 
 
+测试平台：python 3.8, requests, json
+
+
 # 使用方法
 
 chrome登陆考试平台，f12打开开发者工具，在application中找到cookies,找到KSXTSESSID，复制这个值
